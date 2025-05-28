@@ -1,0 +1,2 @@
+Esse projeto é o Back-End de um projeto que estamos desenvolvendo em nosso curso técnico.
+O projeto consiste em desenvolver um aplicativo de celular que faz um controle financeiro, nele podemos colocar as entradas as saídas e classificá-los de acordo com o que usamos.

@@ -1,0 +1,47 @@
+GET http://localhost:3000/users
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Adilson",
+    "email": "jorge@email.com",
+    "type": "admin",
+    "value": 5468.05
+}
+
+###
+
+POST http://localhost:3000/movimentacao/
+Content-Type: application/json
+
+{
+    "category": "Bico",
+    "title": "Site da Pizzaria",
+    "value": 635.59,
+    "type": "Entrada"
+}
+
+###
+GET http://localhost:3000/movimentacao/1
+
+###
+PUT http://localhost:3000/movimentacao/1
+Content-Type: application/json
+
+{
+    "category": "Trabalho",
+    "title": "Sistema",
+    "value": 5485.68,
+    "type": "Entrada"
+}
+
+###
+DELETE http://localhost:3000/movimentacao/9
+###
+GET http://localhost:3000/somadosvalores
+
+###
+GET http://localhost:3000/users/1/posts/
