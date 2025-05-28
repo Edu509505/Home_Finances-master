@@ -4,6 +4,7 @@ import database from './db/database.js'
 import routes from './routes.js'
 import './models/associations.js'
 
+
 database.sync()
 
 const app = express()
