@@ -1,8 +1,8 @@
 import User from '../models/User.js'
 
 async function createUser(req, res) {
-    const { email, name, hierarchy, age, income } = req.body
-    const user = await User.create({ email, name, hierarchy, age, income })
+    const { email, name, password } = req.body
+    const user = await User.create({ email, name, password })
 
     if (user) {
         res.status(201).json(user.toJSON())

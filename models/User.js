@@ -2,7 +2,7 @@ import { Sequelize } from 'sequelize'
 
 import database from '../db/database.js'
 
-const User = database.define('users', {
+const User = database.define('user', {
     email: {
         type: Sequelize.STRING,
         allowNull: false
@@ -11,16 +11,8 @@ const User = database.define('users', {
         type: Sequelize.STRING,
         allowNull: false
     },
-    hierarchy: {
+    password: {
         type: Sequelize.STRING,
-        allowNull: false
-    },
-    age: {
-        type: Sequelize.INTEGER,
-        allowNull: false
-    },
-    income: {
-        type: Sequelize.INTEGER,
         allowNull: false
     }
 })

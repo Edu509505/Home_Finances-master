@@ -2,7 +2,7 @@ import { Sequelize } from 'sequelize'
 
 import database from '../db/database.js'
 
-const Post = database.define('movimentacao', {
+const Post = database.define('movimentacoes', {
     category:{
         type: Sequelize.STRING,
 		allowNull: false
