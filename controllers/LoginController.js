@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken'
 
 const SECRET_KEY = 'chave-privada'
 
-export const login = async(req, res) => {
+const login = async(req, res) => {
     const { email, password } = req.body
 
     const user = await User.findOne({ where: { email } })
@@ -20,3 +20,5 @@ export const login = async(req, res) => {
 
     res.json({ token, usuario: { id: user.id, nome: user.nome, email: user.email } });
 }
+
+export default { login }

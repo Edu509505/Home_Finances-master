@@ -44,3 +44,13 @@ GET http://localhost:3000/somadosvalores
 
 ###
 GET http://localhost:3000/users/1/posts/
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"jorge@email.com",
+    "password":"sadviasdbsdv"
+}

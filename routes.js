@@ -2,6 +2,7 @@ import { Router } from 'express'
 
 import UsersController from './controllers/UsersController.js'
 import PostsController from './controllers/PostsController.js'
+import LoginController from './controllers/LoginController.js'
 
 const router = Router()
 
@@ -17,5 +18,9 @@ router.put('/movimentacao/:id', PostsController.updateMovimentacao)
 router.get('/users/:userId/movimentacao', PostsController.getMovimentacaoByUserId)
 
 router.get('/somadosvalores', PostsController.getMovimentacaoSoma)
+
+//ROTAS LOGIN
+
+router.post('/login', LoginController.login)
 
 export default router
