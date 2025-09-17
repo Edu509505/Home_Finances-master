@@ -1,6 +1,7 @@
 import Post from '../models/Post.js'
 
 async function createMovimentacao(req, res) {
+    console.log('req.body', req.body);
     const { category, title, value, type } = req.body
 
     const operacaoValue = Math.round(value * 100)
